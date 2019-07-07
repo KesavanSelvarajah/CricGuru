@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="com">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/resources/com" />
+      <root url="file://$PROJECT_DIR$/resources/rs2xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/resources/rs2xml" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/resources/rs2xml" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/resources/rs2xml" recursive="false" type="SOURCES" />
+  </library>
+</component>
