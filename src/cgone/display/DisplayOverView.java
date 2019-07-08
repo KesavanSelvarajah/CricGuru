@@ -4,7 +4,8 @@ package cgone.display;
  * @author kesavan(K7)
  */
 
-import cgone.database.DbConnect;
+import cgone.file.DbConnect;
+import cgone.file.FileRepository;
 import cgone.repository.CricGuruApp;
 
 import javax.swing.*;
@@ -12,24 +13,25 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class DisplayOverView {
+public class DisplayOverView{
 
     //variable declaration
 
-    static ResultSet rs;
-    static Connection con;
-    static Statement st;
-    static JLabel lblmid;
-    static JLabel lblteam1;
-    static JLabel lblteam2;
-    static JLabel lblscore1;
-    static JLabel lblscore2;
-    static JLabel lblstatus;
-    static JLabel lblpom;
+    ResultSet rs;
+    Connection con;
+    Statement st;
+    JLabel lblmid;
+    JLabel lblteam1;
+    JLabel lblteam2;
+    JLabel lblscore1;
+    JLabel lblscore2;
+    JLabel lblstatus;
+    JLabel lblpom;
 
     public void perform(String que) {
         try{
-            con= DbConnect.getConnection();
+            FileRepository fileRepository=new DbConnect();
+            con= fileRepository.getConnection();
             st = con.createStatement();
             rs = st.executeQuery(que);
 

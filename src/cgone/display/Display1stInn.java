@@ -4,7 +4,8 @@ package cgone.display;
  * @author kesavan(K7)
  */
 
-import cgone.database.DbConnect;
+import cgone.file.DbConnect;
+import cgone.file.FileRepository;
 import cgone.repository.CricGuruApp;
 import net.proteanit.sql.DbUtils;
 
@@ -13,21 +14,23 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class Display1stInn {
+public class Display1stInn implements Display{
 
     //variable declaration
 
-    static ResultSet rs1;
-    static ResultSet rs2;
-    static Connection con;
-    static Statement st1;
-    static Statement st2;
-    static JTable tblbat;
-    static JTable tblbowl;
+    ResultSet rs1;
+    ResultSet rs2;
+    Connection con;
+    Statement st1;
+    Statement st2;
+    JTable tblbat;
+    JTable tblbowl;
 
-    public static void perform(String que1,String que2) {
+    @Override
+    public void perform(String que1,String que2) {
         try{
-            con= DbConnect.getConnection();
+            FileRepository fileRepository= new DbConnect();
+            con= fileRepository.getConnection();
             st1 = con.createStatement();
             st2 = con.createStatement();
             rs1 = st1.executeQuery(que1);

@@ -52,20 +52,20 @@ public class CricGuruApp extends JFrame implements ActionListener {
     JButton btnfinn;
     JButton btnsinn;
     JComboBox cbcountry;
-    ResultSet rs;
-    String teams[] = {"Afghanistan","Australia","Bangladesh","England","India","New Zealand","Pakistan",
+
+    String [] teams = {"Afghanistan","Australia","Bangladesh","England","India","New Zealand","Pakistan",
             "South Africa","Sri Lanka","West Indies"};
-    int afg[] = {4,7,13,21,24,28,31,36,42};
-    int aus[] = {4,10,14,17,20,26,32,37,45};
-    int ban[] = {5,9,12,16,23,26,31,40,43};
-    int eng[] = {1,6,12,19,24,27,32,38,41};
-    int ind[] = {8,14,18,22,28,34,38,40,44};
-    int nz[] = {3,9,13,18,25,29,33,37,41};
-    int pak[] = {2,6,11,17,22,30,33,36,43};
-    int rsa[] = {15,8,15,21,25,30,35,45};
-    int sl[] = {3,7,11,16,20,27,35,39,44};
-    int wi[] = {2,10,15,19,23,29,34,39,42};
-    int temp[];
+    int [] afg = {4,7,13,21,24,28,31,36,42};
+    int [] aus = {4,10,14,17,20,26,32,37,45};
+    int [] ban = {5,9,12,16,23,26,31,40,43};
+    int [] eng = {1,6,12,19,24,27,32,38,41};
+    int [] ind = {8,14,18,22,28,34,38,40,44};
+    int [] nz = {3,9,13,18,25,29,33,37,41};
+    int [] pak = {2,6,11,17,22,30,33,36,43};
+    int [] rsa = {15,8,15,21,25,30,35,45};
+    int [] sl = {3,7,11,16,20,27,35,39,44};
+    int [] wi = {2,10,15,19,23,29,34,39,42};
+    int [] temp;
     int index=-1;
 
     //getter methods
@@ -102,7 +102,7 @@ public class CricGuruApp extends JFrame implements ActionListener {
 
     public static JTable getTblbowl() { return tblbowl; }
 
-    CricGuruApp(){
+    public CricGuruApp(){
         super("Cric Guru");
         setBounds(0,0,1920,1080);
         setResizable(false);

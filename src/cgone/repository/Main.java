@@ -11,7 +11,7 @@ public class Main {
         //Nothing
     }
 
-    public static void main(String args[]){
+    public static void main(String [] args){
         CricGuruApp cricguruapp = new CricGuruApp();
         cricguruapp.setVisible(true);
     }
