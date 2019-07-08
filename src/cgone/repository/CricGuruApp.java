@@ -2,7 +2,7 @@ package cgone.repository;
 
 /**
  * @author kesavan(K7)
- */
+ **/
 
 import cgone.display.Display1stInn;
 import cgone.display.Display2ndInn;
@@ -18,10 +18,26 @@ public class CricGuruApp extends JFrame implements ActionListener {
     //variable deceleration
 
     String er = "Error";
+    String fst = "Stencil";
+    String fsb = "Source Code Pro Semibold";
+
     String que = "select match_id,team_1,team_1_score,team_2,team_2_score,status,player_of_the_match from matches where match_id =";
+    String afg ="Afghanistan";
+    String aus ="Australia";
+    String ban ="Bangladesh";
+    String eng ="England";
+    String ind ="India";
+    String nz ="New Zealand";
+    String pak ="Pakistan";
+    String rsa ="South Africa";
+    String sl ="Sri Lanka";
+    String wi ="West Indies";
+
+
     Image img;
     Image next;
     Image prev;
+
     JLabel lbllogo;
     JLabel lblteam;
     JLabel lblOverView;
@@ -47,25 +63,26 @@ public class CricGuruApp extends JFrame implements ActionListener {
     JLabel lbl2col6;
     static JTable tblbat;
     static JTable tblbowl;
+
     JButton btnselect;
     JButton btnnxt;
     JButton btnprev;
     JButton btnfinn;
     JButton btnsinn;
+
     JComboBox cbcountry;
 
-    String [] teams = {"Afghanistan","Australia","Bangladesh","England","India","New Zealand","Pakistan",
-            "South Africa","Sri Lanka","West Indies"};
-    int [] afg = {4,7,13,21,24,28,31,36,42};
-    int [] aus = {4,10,14,17,20,26,32,37,45};
-    int [] ban = {5,9,12,16,23,26,31,40,43};
-    int [] eng = {1,6,12,19,24,27,32,38,41};
-    int [] ind = {8,14,18,22,28,34,38,40,44};
-    int [] nz = {3,9,13,18,25,29,33,37,41};
-    int [] pak = {2,6,11,17,22,30,33,36,43};
-    int [] rsa = {15,8,15,21,25,30,35,45};
-    int [] sl = {3,7,11,16,20,27,35,39,44};
-    int [] wi = {2,10,15,19,23,29,34,39,42};
+    String [] teams = {afg,aus,ban,eng,ind,nz,pak,rsa,sl,wi};
+    int [] tafg = {4,7,13,21,24,28,31,36,42};
+    int [] taus = {4,10,14,17,20,26,32,37,45};
+    int [] tban = {5,9,12,16,23,26,31,40,43};
+    int [] teng = {1,6,12,19,24,27,32,38,41};
+    int [] tind = {8,14,18,22,28,34,38,40,44};
+    int [] tnz = {3,9,13,18,25,29,33,37,41};
+    int [] tpak = {2,6,11,17,22,30,33,36,43};
+    int [] trsa = {15,8,15,21,25,30,35,45};
+    int [] tsl = {3,7,11,16,20,27,35,39,44};
+    int [] twi = {2,10,15,19,23,29,34,39,42};
     int [] temp;
     int index=-1;
 
@@ -126,7 +143,7 @@ public class CricGuruApp extends JFrame implements ActionListener {
 
         lblteam = new JLabel("Select Team =>");
         lblteam.setBounds(320,60,300,30);
-        lblteam.setFont(new Font("Stencil",Font.BOLD,25));
+        lblteam.setFont(new Font(fst,Font.BOLD,25));
         lblteam.setForeground(Color.DARK_GRAY);
         lblteam.setBackground(Color.LIGHT_GRAY);
         add(lblteam);
@@ -150,42 +167,42 @@ public class CricGuruApp extends JFrame implements ActionListener {
 
         lblOverView = new JLabel("Over View");
         lblOverView.setBounds(60,260,200,30);
-        lblOverView.setFont(new Font("Stencil", Font.BOLD, 30));
+        lblOverView.setFont(new Font(fst, Font.BOLD, 30));
         lblOverView.setForeground(Color.DARK_GRAY);
         lblOverView.setBackground(Color.LIGHT_GRAY);
         add(lblOverView);
 
         lblmid = new JLabel("Match ID: ");
         lblmid.setBounds(20,300,200,30);
-        lblmid.setFont(new Font("Stencil", Font.ITALIC, 20));
+        lblmid.setFont(new Font(fst, Font.ITALIC, 20));
         lblmid.setForeground(Color.DARK_GRAY);
         lblmid.setBackground(Color.LIGHT_GRAY);
         add(lblmid);
 
         lblteam1 = new JLabel("Team1");
         lblteam1.setBounds(20,330,100,30);
-        lblteam1.setFont(new Font("Source Code Pro Semibold", Font.BOLD, 17));
+        lblteam1.setFont(new Font(fsb, Font.BOLD, 17));
         lblteam1.setForeground(Color.DARK_GRAY);
         lblteam1.setBackground(Color.LIGHT_GRAY);
         add(lblteam1);
 
         lblscore1 = new JLabel("Score1");
         lblscore1.setBounds(80,330,200,30);
-        lblscore1.setFont(new Font("Source Code Pro Semibold", Font.BOLD, 17));
+        lblscore1.setFont(new Font(fsb, Font.BOLD, 17));
         lblscore1.setForeground(Color.DARK_GRAY);
         lblscore1.setBackground(Color.LIGHT_GRAY);
         add(lblscore1);
 
         lblteam2 = new JLabel("Team2");
         lblteam2.setBounds(20,360,100,30);
-        lblteam2.setFont(new Font("Source Code Pro Semibold", Font.BOLD, 17));
+        lblteam2.setFont(new Font(fsb, Font.BOLD, 17));
         lblteam2.setForeground(Color.DARK_GRAY);
         lblteam2.setBackground(Color.LIGHT_GRAY);
         add(lblteam2);
 
         lblscore2 = new JLabel("Score2");
         lblscore2.setBounds(80,360,200,30);
-        lblscore2.setFont(new Font("Source Code Pro Semibold", Font.BOLD, 17));
+        lblscore2.setFont(new Font(fsb, Font.BOLD, 17));
         lblscore2.setForeground(Color.DARK_GRAY);
         lblscore2.setBackground(Color.LIGHT_GRAY);
         add(lblscore2);
@@ -226,7 +243,7 @@ public class CricGuruApp extends JFrame implements ActionListener {
         btnfinn.setBounds(20,520,250,30);
         btnfinn.setForeground(Color.DARK_GRAY);
         btnfinn.setBackground(Color.LIGHT_GRAY);
-        btnfinn.setFont(new Font("Source Code Pro Semibold", Font.BOLD, 20));
+        btnfinn.setFont(new Font(fsb, Font.BOLD, 20));
         btnfinn.addActionListener(this);
         add(btnfinn);
 
@@ -234,7 +251,7 @@ public class CricGuruApp extends JFrame implements ActionListener {
         btnsinn.setBounds(20,580,250,30);
         btnsinn.setForeground(Color.DARK_GRAY);
         btnsinn.setBackground(Color.LIGHT_GRAY);
-        btnsinn.setFont(new Font("Source Code Pro Semibold", Font.BOLD, 20));
+        btnsinn.setFont(new Font(fsb, Font.BOLD, 20));
         btnsinn.addActionListener(this);
         add(btnsinn);
 
@@ -245,37 +262,37 @@ public class CricGuruApp extends JFrame implements ActionListener {
         add(tblbat);
 
         lbl1teamname = new JLabel("Team");
-        lbl1teamname.setFont(new Font("Stencil", Font.BOLD, 25));
+        lbl1teamname.setFont(new Font(fst, Font.BOLD, 25));
         lbl1teamname.setBounds(320,130,150,30);
         add(lbl1teamname);
 
         lbl1col1 = new JLabel("Batsman");
-        lbl1col1.setFont(new Font("Source Code Pro Semibold", Font.BOLD, 18));
+        lbl1col1.setFont(new Font(fsb, Font.BOLD, 18));
         lbl1col1.setBounds(320,180,150,30);
         add(lbl1col1);
 
         lbl1col2 = new JLabel("Runs Scored");
-        lbl1col2.setFont(new Font("Source Code Pro Semibold", Font.BOLD, 18));
+        lbl1col2.setFont(new Font(fsb, Font.BOLD, 18));
         lbl1col2.setBounds(470,180,150,30);
         add(lbl1col2);
 
         lbl1col3 = new JLabel("Bowls Faced");
-        lbl1col3.setFont(new Font("Source Code Pro Semibold", Font.BOLD, 18));
+        lbl1col3.setFont(new Font(fsb, Font.BOLD, 18));
         lbl1col3.setBounds(620,180,150,30);
         add(lbl1col3);
 
         lbl1col4 = new JLabel("Fours Scored");
-        lbl1col4.setFont(new Font("Source Code Pro Semibold", Font.BOLD, 18));
+        lbl1col4.setFont(new Font(fsb, Font.BOLD, 18));
         lbl1col4.setBounds(770,180,150,30);
         add(lbl1col4);
 
         lbl1col5 = new JLabel("Sixs Scored");
-        lbl1col5.setFont(new Font("Source Code Pro Semibold", Font.BOLD, 18));
+        lbl1col5.setFont(new Font(fsb, Font.BOLD, 18));
         lbl1col5.setBounds(920,180,150,30);
         add(lbl1col5);
 
         lbl1col6 = new JLabel("Strike Rate");
-        lbl1col6.setFont(new Font("Source Code Pro Semibold", Font.BOLD, 18));
+        lbl1col6.setFont(new Font(fsb, Font.BOLD, 18));
         lbl1col6.setBounds(1070,180,150,30);
         add(lbl1col6);
 
@@ -284,32 +301,32 @@ public class CricGuruApp extends JFrame implements ActionListener {
         add(tblbowl);
 
         lbl2col1 = new JLabel("Bowler");
-        lbl2col1.setFont(new Font("Source Code Pro Semibold", Font.BOLD, 18));
+        lbl2col1.setFont(new Font(fsb, Font.BOLD, 18));
         lbl2col1.setBounds(320,460,150,30);
         add(lbl2col1);
 
         lbl2col2 = new JLabel("Over Throwed");
-        lbl2col2.setFont(new Font("Source Code Pro Semibold", Font.BOLD, 18));
+        lbl2col2.setFont(new Font(fsb, Font.BOLD, 18));
         lbl2col2.setBounds(470,460,150,30);
         add(lbl2col2);
 
         lbl2col3 = new JLabel("Maiden Overs");
-        lbl2col3.setFont(new Font("Source Code Pro Semibold", Font.BOLD, 18));
+        lbl2col3.setFont(new Font(fsb, Font.BOLD, 18));
         lbl2col3.setBounds(620,460,150,30);
         add(lbl2col3);
 
         lbl2col4 = new JLabel("Runs Given");
-        lbl2col4.setFont(new Font("Source Code Pro Semibold", Font.BOLD, 18));
+        lbl2col4.setFont(new Font(fsb, Font.BOLD, 18));
         lbl2col4.setBounds(770,460,150,30);
         add(lbl2col4);
 
         lbl2col5 = new JLabel("Wicket Taken");
-        lbl2col5.setFont(new Font("Source Code Pro Semibold", Font.BOLD, 18));
+        lbl2col5.setFont(new Font(fsb, Font.BOLD, 18));
         lbl2col5.setBounds(920,460,150,30);
         add(lbl2col5);
 
         lbl2col6 = new JLabel("Econemy");
-        lbl2col6.setFont(new Font("Source Code Pro Semibold", Font.BOLD, 18));
+        lbl2col6.setFont(new Font(fsb, Font.BOLD, 18));
         lbl2col6.setBounds(1070,460,150,30);
         add(lbl2col6);
     }
@@ -320,26 +337,26 @@ public class CricGuruApp extends JFrame implements ActionListener {
         //select button
 
         if(e.getSource().equals(btnselect)){
-            if (cbcountry.getSelectedItem().equals("Afghanistan"))
-                temp = afg;
-            if (cbcountry.getSelectedItem().equals("Australia"))
-                temp = aus;
-            if (cbcountry.getSelectedItem().equals("Bangladesh"))
-                temp = ban;
-            if (cbcountry.getSelectedItem().equals("England"))
-                temp = eng;
-            if (cbcountry.getSelectedItem().equals("India"))
-                temp = ind;
-            if (cbcountry.getSelectedItem().equals("New Zealand"))
-                temp = nz;
-            if (cbcountry.getSelectedItem().equals("Pakistan"))
-                temp = pak;
-            if (cbcountry.getSelectedItem().equals("South Africa"))
-                temp = rsa;
-            if (cbcountry.getSelectedItem().equals("Sri Lanka"))
-                temp = sl;
-            if (cbcountry.getSelectedItem().equals("West Indies"))
-                temp = wi;
+            if (cbcountry.getSelectedItem().equals(afg))
+                temp = tafg;
+            if (cbcountry.getSelectedItem().equals(aus))
+                temp = taus;
+            if (cbcountry.getSelectedItem().equals(ban))
+                temp = tban;
+            if (cbcountry.getSelectedItem().equals(eng))
+                temp = teng;
+            if (cbcountry.getSelectedItem().equals(ind))
+                temp = tind;
+            if (cbcountry.getSelectedItem().equals(nz))
+                temp = tnz;
+            if (cbcountry.getSelectedItem().equals(pak))
+                temp = tpak;
+            if (cbcountry.getSelectedItem().equals(rsa))
+                temp = trsa;
+            if (cbcountry.getSelectedItem().equals(sl))
+                temp = tsl;
+            if (cbcountry.getSelectedItem().equals(wi))
+                temp = twi;
 
             try {
                 index = 0;
@@ -355,26 +372,26 @@ public class CricGuruApp extends JFrame implements ActionListener {
         //next button
 
         if((e.getSource().equals(btnnxt))&&(index>=0)){
-            if (cbcountry.getSelectedItem().equals("Afghanistan"))
-                temp = afg;
-            if (cbcountry.getSelectedItem().equals("Australia"))
-                temp = aus;
-            if (cbcountry.getSelectedItem().equals("Bangladesh"))
-                temp = ban;
-            if (cbcountry.getSelectedItem().equals("England"))
-                temp = eng;
-            if (cbcountry.getSelectedItem().equals("India"))
-                temp = ind;
-            if (cbcountry.getSelectedItem().equals("New Zealand"))
-                temp = nz;
-            if (cbcountry.getSelectedItem().equals("Pakistan"))
-                temp = pak;
-            if (cbcountry.getSelectedItem().equals("South Africa"))
-                temp = rsa;
-            if (cbcountry.getSelectedItem().equals("Sri Lanka"))
-                temp = sl;
-            if (cbcountry.getSelectedItem().equals("West Indies"))
-                temp = wi;
+            if (cbcountry.getSelectedItem().equals(afg))
+                temp = tafg;
+            if (cbcountry.getSelectedItem().equals(aus))
+                temp = taus;
+            if (cbcountry.getSelectedItem().equals(ban))
+                temp = tban;
+            if (cbcountry.getSelectedItem().equals(eng))
+                temp = teng;
+            if (cbcountry.getSelectedItem().equals(ind))
+                temp = tind;
+            if (cbcountry.getSelectedItem().equals(nz))
+                temp = tnz;
+            if (cbcountry.getSelectedItem().equals(pak))
+                temp = tpak;
+            if (cbcountry.getSelectedItem().equals(rsa))
+                temp = trsa;
+            if (cbcountry.getSelectedItem().equals(sl))
+                temp = tsl;
+            if (cbcountry.getSelectedItem().equals(wi))
+                temp = twi;
 
             try {
                 index ++;
@@ -383,7 +400,7 @@ public class CricGuruApp extends JFrame implements ActionListener {
                 cga.perform(que+temp[index]);
 
             }catch (Exception ae){
-                JOptionPane.showMessageDialog(null,e,er,JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null,"No New Matches Found",er,JOptionPane.INFORMATION_MESSAGE);
             }
         }
 
@@ -415,7 +432,7 @@ public class CricGuruApp extends JFrame implements ActionListener {
                         "SELECT Name,Over_Throwed,Maiden_Throwed,Runs_Given,Wicket_Taken,Economy FROM scorecard,Players WHERE scorecard.Player_ID = players.Player_ID and Over_Throwed > 0 and Innings_ID = 2 and scorecard.Match_ID ='"+temp[index]+"'");
 
             }catch (Exception ae){
-                JOptionPane.showMessageDialog(null,e,er,JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null,"First Select the Country",er,JOptionPane.INFORMATION_MESSAGE);
             }
         }
 
@@ -431,7 +448,7 @@ public class CricGuruApp extends JFrame implements ActionListener {
                 di1.perform("SELECT Name,Runs_Scored,Balls_Faced,Fours_Scored,Sixes_Scored,Strike_Rate FROM scorecard,Players WHERE scorecard.Player_ID = players.Player_ID and scorecard.Innings_ID = 2 and scorecard.Match_ID ='"+temp[index]+"'",
                         "SELECT Name,Over_Throwed,Maiden_Throwed,Runs_Given,Wicket_Taken,Economy FROM scorecard,Players WHERE scorecard.Player_ID = players.Player_ID and Over_Throwed > 0 and Innings_ID = 1 and scorecard.Match_ID ='"+temp[index]+"'");
             }catch (Exception ae){
-                JOptionPane.showMessageDialog(null,e,er,JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null,"First Select the Country",er,JOptionPane.INFORMATION_MESSAGE);
             }
         }
 
