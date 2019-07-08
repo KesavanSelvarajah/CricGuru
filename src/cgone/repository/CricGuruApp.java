@@ -12,12 +12,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.ResultSet;
 
 public class CricGuruApp extends JFrame implements ActionListener {
 
     //variable deceleration
 
+    String er = "Error";
+    String que = "select match_id,team_1,team_1_score,team_2,team_2_score,status,player_of_the_match from matches where match_id =";
     Image img;
     Image next;
     Image prev;
@@ -344,10 +345,10 @@ public class CricGuruApp extends JFrame implements ActionListener {
                 index = 0;
 
                 DisplayOverView cga = new DisplayOverView();
-                cga.perform("select match_id,team_1,team_1_score,team_2,team_2_score,status,player_of_the_match from matches where match_id ='"+temp[index]+"'");
+                cga.perform(que+temp[index]);
 
             }catch (Exception ae){
-                JOptionPane.showMessageDialog(null,e,"Error",JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null,e,er,JOptionPane.INFORMATION_MESSAGE);
             }
         }
 
@@ -379,10 +380,10 @@ public class CricGuruApp extends JFrame implements ActionListener {
                 index ++;
 
                 DisplayOverView cga = new DisplayOverView();
-                cga.perform("select match_id,team_1,team_1_score,team_2,team_2_score,status,player_of_the_match from matches where match_id ='"+temp[index]+"'");
+                cga.perform(que+temp[index]);
 
             }catch (Exception ae){
-                JOptionPane.showMessageDialog(null,e,"Error",JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null,e,er,JOptionPane.INFORMATION_MESSAGE);
             }
         }
 
@@ -394,10 +395,10 @@ public class CricGuruApp extends JFrame implements ActionListener {
                 index --;
 
                 DisplayOverView cga = new DisplayOverView();
-                cga.perform("select match_id,team_1,team_1_score,team_2,team_2_score,status,player_of_the_match from matches where match_id ='"+temp[index]+"'");
+                cga.perform(que+temp[index]);
 
             }catch (Exception ae){
-                JOptionPane.showMessageDialog(null,e,"Error",JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null,e,er,JOptionPane.INFORMATION_MESSAGE);
             }
         }
 
@@ -414,7 +415,7 @@ public class CricGuruApp extends JFrame implements ActionListener {
                         "SELECT Name,Over_Throwed,Maiden_Throwed,Runs_Given,Wicket_Taken,Economy FROM scorecard,Players WHERE scorecard.Player_ID = players.Player_ID and Over_Throwed > 0 and Innings_ID = 2 and scorecard.Match_ID ='"+temp[index]+"'");
 
             }catch (Exception ae){
-                JOptionPane.showMessageDialog(null,e,"Error",JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null,e,er,JOptionPane.INFORMATION_MESSAGE);
             }
         }
 
@@ -430,7 +431,7 @@ public class CricGuruApp extends JFrame implements ActionListener {
                 di1.perform("SELECT Name,Runs_Scored,Balls_Faced,Fours_Scored,Sixes_Scored,Strike_Rate FROM scorecard,Players WHERE scorecard.Player_ID = players.Player_ID and scorecard.Innings_ID = 2 and scorecard.Match_ID ='"+temp[index]+"'",
                         "SELECT Name,Over_Throwed,Maiden_Throwed,Runs_Given,Wicket_Taken,Economy FROM scorecard,Players WHERE scorecard.Player_ID = players.Player_ID and Over_Throwed > 0 and Innings_ID = 1 and scorecard.Match_ID ='"+temp[index]+"'");
             }catch (Exception ae){
-                JOptionPane.showMessageDialog(null,e,"Error",JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null,e,er,JOptionPane.INFORMATION_MESSAGE);
             }
         }
 
