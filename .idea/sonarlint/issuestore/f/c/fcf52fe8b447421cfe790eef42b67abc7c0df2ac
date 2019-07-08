@@ -1,46 +1,27 @@
 
-Dsquid:S1948"&Make "prev" transient or serializable.(è†öè8á¥‡æ¼-
-Jsquid:S3010¹"&Remove this assignment of "lblscore2".(ŒÙ†ºüÿÿÿÿ8á¥‡æ¼-
-Isquid:S3010¤"%Remove this assignment of "lblteam1".(×¹¸šøÿÿÿÿ8á¥‡æ¼-
-vsquid:S3776½"RRefactor this method to reduce its Cognitive Complexity from 57 to the 15 allowed.(¼ Òşüÿÿÿÿ8á¥‡æ¼-
-osquid:S11928"LDefine a constant instead of duplicating this literal "Afghanistan" 3 times.(²£˜Ùşÿÿÿÿ8á¥‡æ¼-
-[squid:S1197;"8Move the array designator from the variable to the type.(ïş‚µúÿÿÿÿ8á¥‡æ¼-
-ksquid:S11928"HDefine a constant instead of duplicating this literal "England" 3 times.(²£˜Ùşÿÿÿÿ8á¥‡æ¼-
-Vsquid:S1197>"8Move the array designator from the variable to the type.(Æ²Û‘8á¥‡æ¼-
-Csquid:S1948"&Make "next" transient or serializable.(¢ÅÏ8á¥‡æ¼-
-gsquid:S1192€"HDefine a constant instead of duplicating this literal "Stencil" 4 times.(¼ú·á8á¥‡æ¼-
-Vsquid:S1197B"8Move the array designator from the variable to the type.(óíù8á¥‡æ¼-
-Vsquid:S1197A"8Move the array designator from the variable to the type.(¨óƒæ8á¥‡æ¼-
-jsquid:S11929"LDefine a constant instead of duplicating this literal "West Indies" 3 times.(çäŸ8á¥‡æ¼-
-Tsquid:S2209"5Change this instance-reference to a static reference.(¦ñ‹é8È´’ç¼-
-[squid:S1197<"8Move the array designator from the variable to the type.(©æ¬¢üÿÿÿÿ8á¥‡æ¼-
-Jsquid:S3010À"&Remove this assignment of "lblstatus".(ï¬ª¯úÿÿÿÿ8á¥‡æ¼-
-Lsquid:S2440œ"-Remove this instantiation of "Display1stInn".(£Î‰Ö8ä™–ç¼-
-×squid:S1192Û"²Define a constant instead of duplicating this literal "select match_id,team_1,team_1_score,team_2,team_2_score,status,player_of_the_match from matches where match_id ='" 3 times.(±ª¨şÿÿÿÿ8á¥‡æ¼-
-~squid:S1192¦"ZDefine a constant instead of duplicating this literal "Source Code Pro Semibold" 18 times.(ûÈøÿıÿÿÿÿ8á¥‡æ¼-
-Bsquid:S3010"#Remove this assignment of "lblmid".(ô®˜8á¥‡æ¼-
-Isquid:S3010²"%Remove this assignment of "lblteam2".(½Ò¢Ôùÿÿÿÿ8á¥‡æ¼-
-lsquid:S11928"IDefine a constant instead of duplicating this literal "Pakistan" 3 times.(²£˜Ùşÿÿÿÿ8á¥‡æ¼-
-Bsquid:S3010ò"#Remove this assignment of "tblbat".(ü›Û8á¥‡æ¼-
-[squid:S1197@"8Move the array designator from the variable to the type.(œÿæıÿÿÿÿ8á¥‡æ¼-
-Bsquid:S1948"%Make "img" transient or serializable.(»Ä­'8á¥‡æ¼-
-Bsquid:S19487"$Make "rs" transient or serializable.(¶¨ÜŒ8á¥‡æ¼-
-nsquid:S11928"KDefine a constant instead of duplicating this literal "Bangladesh" 3 times.(²£˜Ùşÿÿÿÿ8á¥‡æ¼-
-Ysquid:S2209®"5Change this instance-reference to a static reference.(“ùïûÿÿÿÿ8İÓ”ç¼-
-[squid:S1197C"8Move the array designator from the variable to the type.(›ËŞ™øÿÿÿÿ8á¥‡æ¼-
-jsquid:S1192Ş"FDefine a constant instead of duplicating this literal "Error" 5 times.(áºçªúÿÿÿÿ8á¥‡æ¼-
-Gsquid:S3010Ç"#Remove this assignment of "lblpom".(™€çÿùÿÿÿÿ8á¥‡æ¼-
-Vsquid:S1197="8Move the array designator from the variable to the type.(˜É§Õ8á¥‡æ¼-
-ksquid:S11929"MDefine a constant instead of duplicating this literal "South Africa" 3 times.(çäŸ8á¥‡æ¼-
-lsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(€‹†ô8á¥‡æ¼-
-hsquid:S11929"JDefine a constant instead of duplicating this literal "Sri Lanka" 3 times.(çäŸ8á¥‡æ¼-
-Usquid:S1197D"8Move the array designator from the variable to the type.(ÌõÇ8á¥‡æ¼-
-Qsquid:S2440­"-Remove this instantiation of "Display2ndInn".(åëÛ´üÿÿÿÿ8ÄÑ•ç¼-
-Vsquid:S1197?"8Move the array designator from the variable to the type.(™Â‰’8á¥‡æ¼-
-osquid:S11928"LDefine a constant instead of duplicating this literal "New Zealand" 3 times.(²£˜Ùşÿÿÿÿ8á¥‡æ¼-
-isquid:S11928"FDefine a constant instead of duplicating this literal "India" 3 times.(²£˜Ùşÿÿÿÿ8á¥‡æ¼-
-Esquid:S3010«"&Remove this assignment of "lblscore1".(©ñş8á¥‡æ¼-
-Hsquid:S3010™"$Remove this assignment of "tblbowl".(¬êâ™ıÿÿÿÿ8á¥‡æ¼-
-[squid:S11978"8Move the array designator from the variable to the type.(²£˜Ùşÿÿÿÿ8á¥‡æ¼-
-[squid:S1197:"8Move the array designator from the variable to the type.(ÎÁö¦øÿÿÿÿ8á¥‡æ¼-
-msquid:S11928"JDefine a constant instead of duplicating this literal "Australia" 3 times.(²£˜Ùşÿÿÿÿ8á¥‡æ¼-
+hsquid:S1192:"JDefine a constant instead of duplicating this literal "Sri Lanka" 3 times.(çäŸ8á¥‡æ¼-
+ksquid:S1192:"MDefine a constant instead of duplicating this literal "South Africa" 3 times.(çäŸ8á¥‡æ¼-
+dsquid:S11929"FDefine a constant instead of duplicating this literal "India" 3 times.(ôÒş±8á¥‡æ¼-
+Bsquid:S3010ó"#Remove this assignment of "tblbat".(ü›Û8°ÕÈû¼-
+Hsquid:S3010š"$Remove this assignment of "tblbowl".(¬êâ™ıÿÿÿÿ8ƒÿÇû¼-
+~squid:S1192§"ZDefine a constant instead of duplicating this literal "Source Code Pro Semibold" 18 times.(ûÈøÿıÿÿÿÿ8á¥‡æ¼-
+Isquid:S3010¥"%Remove this assignment of "lblteam1".(×¹¸šøÿÿÿÿ8ÜáÉû¼-
+fsquid:S11929"HDefine a constant instead of duplicating this literal "England" 3 times.(ôÒş±8á¥‡æ¼-
+Jsquid:S3010º"&Remove this assignment of "lblscore2".(ŒÙ†ºüÿÿÿÿ8Š•Éû¼-
+Gsquid:S3010È"#Remove this assignment of "lblpom".(™€çÿùÿÿÿÿ8·Èû¼-
+Jsquid:S3010Á"&Remove this assignment of "lblstatus".(ï¬ª¯úÿÿÿÿ8”øÈû¼-
+jsquid:S1192:"LDefine a constant instead of duplicating this literal "West Indies" 3 times.(çäŸ8á¥‡æ¼-
+lsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(€‹†ô8á¥‡æ¼-
+Bsquid:S3010"#Remove this assignment of "lblmid".(ô®˜8îíÅû¼-
+Esquid:S3010¬"&Remove this assignment of "lblscore1".(©ñş8Î­Éû¼-
+vsquid:S3776¾"RRefactor this method to reduce its Cognitive Complexity from 57 to the 15 allowed.(¼ Òşüÿÿÿÿ8á¥‡æ¼-
+jsquid:S11929"LDefine a constant instead of duplicating this literal "New Zealand" 3 times.(ôÒş±8á¥‡æ¼-
+gsquid:S11929"IDefine a constant instead of duplicating this literal "Pakistan" 3 times.(ôÒş±8á¥‡æ¼-
+Isquid:S3010³"%Remove this assignment of "lblteam2".(½Ò¢Ôùÿÿÿÿ8›ÈÉû¼-
+jsquid:S11929"LDefine a constant instead of duplicating this literal "Afghanistan" 3 times.(ôÒş±8á¥‡æ¼-
+Bsquid:S1948"%Make "img" transient or serializable.(»Ä­'8á¥‡æ¼-
+isquid:S11929"KDefine a constant instead of duplicating this literal "Bangladesh" 3 times.(ôÒş±8á¥‡æ¼-
+hsquid:S11929"JDefine a constant instead of duplicating this literal "Australia" 3 times.(ôÒş±8á¥‡æ¼-
+Csquid:S1948"&Make "next" transient or serializable.(¢ÅÏ8á¥‡æ¼-
+Dsquid:S1948"&Make "prev" transient or serializable.(è†öè8á¥‡æ¼-
+gsquid:S1192"HDefine a constant instead of duplicating this literal "Stencil" 4 times.(¼ú·á8á¥‡æ¼-

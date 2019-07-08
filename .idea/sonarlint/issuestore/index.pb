@@ -3,8 +3,6 @@ T
 $src/cgone/display/Display2ndInn.java,9\f\9f60b5f753cd1f40cf7ab5474785f3dd31700882
 N
 src/cgone/repository/Main.java,8\8\88cf074eb7df673be81d8c932c69520546311539
-Q
-!src/cgone/database/DbConnect.java,7\6\76823d7a71e6b514fffc3be5a2a9a9ea074cd387
 U
 %src/cgone/repository/CricGuruApp.java,f\c\fcf52fe8b447421cfe790eef42b67abc7c0df2ac
 V
@@ -45,3 +43,11 @@ j
 Cric Guru.iml,0\2\02d3d33f7edfec1dcaff9761864762c98b46e7e0
 =
 cric_guru.sql,3\a\3a2816c6dcc92a1dd4fce07e1c68540dab61db2e
+N
+src/cgone/display/Display.java,c\1\c135f85017af5aa7ae3f94307d14a9b74bf92727
+M
+src/cgone/file/DbConnect.java,1\d\1def3632311098cd46adbdec687ff721a0f22abc
+R
+"src/cgone/file/FileRepository.java,8\0\804137f14550dd28b6e84418c223cfb18b825643
+P
+ .idea/dictionaries/Kesavan_S.xml,a\2\a21513b71dcd38b35820953080407738861b1263
